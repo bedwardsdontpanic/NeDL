@@ -1,0 +1,15 @@
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\bin\Debug\net6.0\exponentVars.exe
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\bin\Debug\net6.0\exponentVars.deps.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\bin\Debug\net6.0\exponentVars.runtimeconfig.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\bin\Debug\net6.0\exponentVars.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\bin\Debug\net6.0\ref\exponentVars.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\bin\Debug\net6.0\exponentVars.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\exponentVars.csproj.AssemblyReference.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\exponentVars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\exponentVars.AssemblyInfoInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\exponentVars.AssemblyInfo.cs
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\exponentVars.csproj.CoreCompileInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\exponentVars.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\ref\exponentVars.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\exponentVars.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\exponentVars\obj\Debug\net6.0\exponentVars.genruntimeconfig.cache

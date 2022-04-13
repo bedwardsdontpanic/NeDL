@@ -1,0 +1,15 @@
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\bin\Debug\net6.0\mathProblems1.exe
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\bin\Debug\net6.0\mathProblems1.deps.json
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\bin\Debug\net6.0\mathProblems1.runtimeconfig.json
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\bin\Debug\net6.0\mathProblems1.dll
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\bin\Debug\net6.0\ref\mathProblems1.dll
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\bin\Debug\net6.0\mathProblems1.pdb
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\mathProblems1.csproj.AssemblyReference.cache
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\mathProblems1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\mathProblems1.AssemblyInfoInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\mathProblems1.AssemblyInfo.cs
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\mathProblems1.csproj.CoreCompileInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\mathProblems1.dll
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\ref\mathProblems1.dll
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\mathProblems1.pdb
+C:\Users\BEdwards\Desktop\NeDL\mathProblems1\obj\Debug\net6.0\mathProblems1.genruntimeconfig.cache

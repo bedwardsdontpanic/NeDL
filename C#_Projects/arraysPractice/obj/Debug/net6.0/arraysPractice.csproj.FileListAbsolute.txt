@@ -1,0 +1,15 @@
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\bin\Debug\net6.0\arraysPractice.exe
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\bin\Debug\net6.0\arraysPractice.deps.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\bin\Debug\net6.0\arraysPractice.runtimeconfig.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\bin\Debug\net6.0\arraysPractice.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\bin\Debug\net6.0\ref\arraysPractice.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\bin\Debug\net6.0\arraysPractice.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\arraysPractice.csproj.AssemblyReference.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\arraysPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\arraysPractice.AssemblyInfoInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\arraysPractice.AssemblyInfo.cs
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\arraysPractice.csproj.CoreCompileInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\arraysPractice.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\ref\arraysPractice.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\arraysPractice.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\arraysPractice\obj\Debug\net6.0\arraysPractice.genruntimeconfig.cache

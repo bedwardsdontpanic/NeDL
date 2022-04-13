@@ -1,0 +1,15 @@
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\bin\Debug\net6.0\competencyChallenge01.exe
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\bin\Debug\net6.0\competencyChallenge01.deps.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\bin\Debug\net6.0\competencyChallenge01.runtimeconfig.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\bin\Debug\net6.0\competencyChallenge01.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\bin\Debug\net6.0\ref\competencyChallenge01.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\bin\Debug\net6.0\competencyChallenge01.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\competencyChallenge01.csproj.AssemblyReference.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\competencyChallenge01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\competencyChallenge01.AssemblyInfoInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\competencyChallenge01.AssemblyInfo.cs
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\competencyChallenge01.csproj.CoreCompileInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\competencyChallenge01.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\ref\competencyChallenge01.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\competencyChallenge01.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\competencyChallenge01\obj\Debug\net6.0\competencyChallenge01.genruntimeconfig.cache
