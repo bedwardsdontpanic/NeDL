@@ -1,0 +1,15 @@
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\bin\Debug\net6.0\jsonPractice.exe
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\bin\Debug\net6.0\jsonPractice.deps.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\bin\Debug\net6.0\jsonPractice.runtimeconfig.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\bin\Debug\net6.0\jsonPractice.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\bin\Debug\net6.0\ref\jsonPractice.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\bin\Debug\net6.0\jsonPractice.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\jsonPractice.csproj.AssemblyReference.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\jsonPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\jsonPractice.AssemblyInfoInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\jsonPractice.AssemblyInfo.cs
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\jsonPractice.csproj.CoreCompileInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\jsonPractice.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\ref\jsonPractice.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\jsonPractice.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\jsonPractice\obj\Debug\net6.0\jsonPractice.genruntimeconfig.cache
