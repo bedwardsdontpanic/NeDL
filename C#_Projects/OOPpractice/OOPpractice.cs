@@ -96,4 +96,18 @@ namespace HelloWorld {
 
     }
 
+
+    public class Classroom {
+            
+        public Classroom(List<Student> classList) {
+            this.classList = classList;
+        }
+    
+        public List<Student> classList {
+            get { return classList;  }
+            set { classList = value; }
+        }
+
+    }
+
 }
