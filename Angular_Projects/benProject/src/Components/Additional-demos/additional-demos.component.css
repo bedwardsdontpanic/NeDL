@@ -1,0 +1,31 @@
+body {
+    height: 100%;
+    position: fixed;
+    min-width: 100%;
+    background-image: url("https://mocah.org/uploads/posts/4592269-vector-planet-abduzeedo-8-bit-space-artwork-digital-art-comet-colorful-spaceship-minimalism-space-art-comic-art-rocket.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Merienda One', cursive;
+    color: orange;
+}
+
+
+.appsList {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .appsList li {
+    position: relative;
+    padding: 100px;
+  }
+
+  
+  .linkChange {
+    display: flex;
+    justify-content: center;
+  }

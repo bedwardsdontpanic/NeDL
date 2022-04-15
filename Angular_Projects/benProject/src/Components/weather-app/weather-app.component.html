@@ -1,0 +1,23 @@
+<body>
+
+    <button type="button" class="btn btn-outline-dark" (click)="darkSkyWeather()" id="weatherButton">Get Your Local Weather Report</button>
+
+    <ul class = "weekList">
+        <li *ngFor="let day of days">
+            <b class = "time">{{day.time}}</b>
+            <div class="container" id="icon">
+                <sc-skycons [weather]="day.icon"></sc-skycons>
+            </div> 
+            <p class="summary">Summary: {{day.summary}}</p>
+            <p class="sunset">Temp High: {{day.temperatureHigh}} °F</p>
+            <p class="sunset">Temp Low: {{day.temperatureLow}} °F</p>
+            <p class="sunrise">Sunrise: {{day.sunriseTime}}</p>
+            <p class="chance">Precipitation Chance: {{day.precipProbability}}</p>
+            <p class="type">Precipitation Type: {{day.precipType}}</p>           
+            <p class="sunset">Sunset: {{day.sunsetTime}}</p>
+        </li>
+    </ul>
+
+    <img class = background>
+
+</body>

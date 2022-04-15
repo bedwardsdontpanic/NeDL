@@ -1,0 +1,82 @@
+.headings {
+    font-family: 'Pacifico', cursive;
+    font-size: x-large;
+}
+
+
+body {
+    height: 100%;
+    position: fixed;
+    min-width: 100%;
+    background-image: url("https://i.imgur.com/Qotd9S5.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.appsList {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+.appsList li {
+  position: relative;
+  padding: 100px;
+}
+
+.appsList .headings {
+  color: purple;
+  white-space: nowrap;
+  margin: 0 0 .75rem;
+  font-size: 1.2rem;
+}
+
+.linkChange {
+  display: flex;
+  justify-content: center;
+}
+
+.imgs {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+}
+
+.box {
+  position: absolute;
+  background: #5FCF80;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+
+/* Box comes immediately after imgs, so it can be selected to transform on hover with imgs */
+
+#imgs:hover+#box {
+  transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+  z-index: -1;
+}
+
+.box:hover {
+  transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.rotate {
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate:hover {
+  transition: all 1s ease-in-out;
+}

@@ -1,0 +1,5 @@
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\DBTesting\obj\Debug\net6.0\DBTesting.csproj.AssemblyReference.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\DBTesting\obj\Debug\net6.0\DBTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\DBTesting\obj\Debug\net6.0\DBTesting.AssemblyInfoInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\DBTesting\obj\Debug\net6.0\DBTesting.AssemblyInfo.cs
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\DBTesting\obj\Debug\net6.0\DBTesting.csproj.CoreCompileInputs.cache
