@@ -43,23 +43,34 @@ class helloworld {
             }
         }
 
-        Console.WriteLine("There are currently " + validCount + " restaurant(s) in the class... ");
+        Console.WriteLine("There are currently " + validCount + " restaurant(s)... ");
 
-        if(validCount >= 10) {
-            Console.WriteLine("restaurant class size is already at its max of " + validCount + ". Returning... \n");
+        if(validCount >= 25) {
+            Console.WriteLine("restaurants size is already at its max of " + validCount + ". Returning... \n");
             return theRestaurants;
         }
 
-        Console.Write("Enter the name of the new restaurant: ");
-        string newrestaurant = Console.ReadLine();
-        bool created = false;
+        string newRestaurantName;
+        do{
+            Console.Write("Enter the name of the new restaurant: ");
+            newRestaurantName = Console.ReadLine();
+        }
+        while(validateName(newRestaurantName) == false);
+        
+        string theRating;
+        do {
+            Console.Write("Enter the review score for " + newRestaurantName +"(use a score of 1-5 please): ");
+            theRating = Console.ReadLine();
+        }
+        while(validateInt(theRating)==false);
+        
+        string newrestaurant = newRestaurantName + "|" + theRating;
 
-        for(int i = 0; i < 10; i++) {
-            if((theRestaurants[i] == "" || theRestaurants[i] == null) && created == false) {
+        for(int i = 0; i < 25; i++) {
+            if(theRestaurants[i] == "" || theRestaurants[i] == null) {
                 theRestaurants[i] = newrestaurant;
-                created = true;
+                break;
             }
-
         }
 
         return theRestaurants;
@@ -69,7 +80,8 @@ class helloworld {
     static string[] readrestaurants(string[] theRestaurants) {
         foreach(string restaurant in theRestaurants){
             if(restaurant != "" && restaurant != null){
-                Console.WriteLine(restaurant);
+                string[] subs = restaurant.Split('|');
+                Console.WriteLine("name: " + subs[0] + ", rating " + subs[1]);
             }
         }
 
@@ -82,7 +94,12 @@ class helloworld {
         string restaurantToReplace = Console.ReadLine();
         
         Console.Write("Enter the restaurant you'd like to make in their place: ");
-        string replacementrestaurant = Console.ReadLine();
+        string replacementrestaurantName = Console.ReadLine();
+
+        Console.Write("Enter the score you'd like to give " + replacementrestaurantName + ". (1-5 please): ");
+        string replacementrestaurantScore = Console.ReadLine();
+
+        string replacementrestaurant = replacementrestaurantName + "|" + replacementrestaurantScore;
 
         for(int i = 0; i < theRestaurants.Length; i++) {
             theRestaurants[i] = theRestaurants[i].Replace(restaurantToReplace, replacementrestaurant);
@@ -98,8 +115,9 @@ class helloworld {
         int deletions = 0;
 
         for(int i = 0; i < theRestaurants.Length; i++) {
-
-            if(theRestaurants[i] == restaurantToDelete) {
+            string[] subs = theRestaurants[i].Split('|');
+            Console.Write(subs[0]);
+            if(theRestaurants[i] == subs[0]) {
                 theRestaurants[i] = theRestaurants[i].Replace(restaurantToDelete, "");
                 deletions++;
             }
@@ -118,18 +136,37 @@ class helloworld {
         }
 
         else {
+            Console.WriteLine("Invalid selection. Try again. ");
             return false;
         }
     }
 
     static bool validateInt(string s) {
 
-        if(int.TryParse(s, out int x) == true && x >= 0) {
+        if(int.TryParse(s, out int x) == true && x >= 1 && x <= 5) {
             return true;
         }
 
         else {
+            Console.WriteLine("Invalid input. Try again... ");
             return false;
+        }
+    }
+
+    static bool validateName(string s) {
+
+        if((s.Contains('|')) == true) {
+            Console.WriteLine("Why would you put a pipe in your restaurant's name? Don't do that. ");
+            return false;
+        }
+
+        else if(s =="" || s == null){
+            Console.WriteLine("Please be sure to enter a value.. ");
+            return false;
+        }
+
+        else {
+            return true;
         }
     }
 
@@ -139,20 +176,19 @@ class helloworld {
         char selection = 'z';
         bool charCheck = false;
 
-        do{
+        do {
             Console.Write("What would you like to do? Type the letter to choose \nL) Load into array \nC) Create restaurants \nR) Read all restaurants \nU) Update a restaurant \nD) Delete a restaurant \nS) Save array to file \nQ) Quit the program \n");
             input = Console.ReadLine();
             input = input.ToUpper();
             charCheck = validateSelection(input);
            
            if(charCheck == false){
-               Console.WriteLine("Invalid input. Try again...\n");
                continue;
             }
 
             selection = Convert.ToChar(input);
 
-            switch(selection){
+            switch(selection) {
                 case 'L':
                     Console.WriteLine("Loading restaurants from array...\n");
                     theRestaurants = readFileIntoArray();
