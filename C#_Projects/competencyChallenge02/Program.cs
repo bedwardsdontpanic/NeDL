@@ -15,6 +15,7 @@ class helloworld {
     } 
 
     static string[] saveArrayIntoFile(string[] theRestaurants){
+        
         System.IO.File.WriteAllLines(@"restaurants.txt", theRestaurants);
         return theRestaurants;
     }
@@ -25,7 +26,7 @@ class helloworld {
         try {
             // Create the file.
             using (FileStream fst = File.Create(fileName)) {
-                Console.WriteLine(" A file created with name mytest.txt\n\n");
+
             }
         }
         
@@ -34,8 +35,9 @@ class helloworld {
         }
     }
 
-    static string[] createrestaurants(string[] theRestaurants) {
+    static string[] createRestaurants(string[] theRestaurants) {
 
+        // Check if the count is over the max. 
         int validCount = 0;
         foreach(string restaurant in theRestaurants){
             if(restaurant != ""  && restaurant != null){
@@ -50,13 +52,15 @@ class helloworld {
             return theRestaurants;
         }
 
+        // Get name of new restaurant and validate
         string newRestaurantName;
         do{
             Console.Write("Enter the name of the new restaurant: ");
             newRestaurantName = Console.ReadLine();
         }
         while(validateName(newRestaurantName) == false);
-        
+
+        // Get rating of new restaurant and validate
         string theRating;
         do {
             Console.Write("Enter the review score for " + newRestaurantName +"(use a score of 1-5 please): ");
@@ -64,14 +68,17 @@ class helloworld {
         }
         while(validateInt(theRating)==false);
         
-        string newrestaurant = newRestaurantName + "|" + theRating;
+        // Concatenate name + score and insert into first available space. 
+        string newRestaurant = newRestaurantName + "|" + theRating;
 
         for(int i = 0; i < 25; i++) {
             if(theRestaurants[i] == "" || theRestaurants[i] == null) {
-                theRestaurants[i] = newrestaurant;
+                theRestaurants[i] = newRestaurant;
                 break;
             }
         }
+
+        Console.WriteLine(newRestaurantName + " has been created...\n");
 
         return theRestaurants;
 
@@ -84,47 +91,75 @@ class helloworld {
                 Console.WriteLine("name: " + subs[0] + ", rating " + subs[1]);
             }
         }
-
+        
+        Console.WriteLine("Returning to main menu...\n");
         return theRestaurants;
     }
 
-    static string[] updaterestaurants(string[] theRestaurants) {
+    static string[] updateRestaurants(string[] theRestaurants) {
         
         Console.Write("Enter the restaurant you'd like to replace: ");
         string restaurantToReplace = Console.ReadLine();
         
-        Console.Write("Enter the restaurant you'd like to make in their place: ");
-        string replacementrestaurantName = Console.ReadLine();
+        
+        string newRestaurantName;
+        do{
+            Console.Write("Enter the name of the new restaurant to replace " + restaurantToReplace + ": ");
+            newRestaurantName = Console.ReadLine();
+        }
+        while(validateName(newRestaurantName) == false);
 
-        Console.Write("Enter the score you'd like to give " + replacementrestaurantName + ". (1-5 please): ");
-        string replacementrestaurantScore = Console.ReadLine();
+        
+        string newRating;
+        do {
+            Console.Write("Enter the review score for " + newRestaurantName +"(use a score of 1-5 please): ");
+            newRating = Console.ReadLine();
+        }
+        while(validateInt(newRating)==false);
 
-        string replacementrestaurant = replacementrestaurantName + "|" + replacementrestaurantScore;
+        
+        string replacementrestaurant = newRestaurantName + "|" + newRating;
 
+
+        int replacements = 0;
         for(int i = 0; i < theRestaurants.Length; i++) {
-            theRestaurants[i] = theRestaurants[i].Replace(restaurantToReplace, replacementrestaurant);
+            
+            if(theRestaurants[i] == null || theRestaurants[i] == "") {
+                continue;
+            }
+
+            string[] subs = theRestaurants[i].Split('|');
+            if(restaurantToReplace == subs[0]) {
+                theRestaurants[i] = replacementrestaurant;
+                replacements++;
+            }
         }
 
+        Console.WriteLine("There were " + replacements + " replacement(s) made... Returning to main menu...\n");
         return theRestaurants;
     }
 
-    static string[] deleterestaurants(string[] theRestaurants) {
+    static string[] deleteRestaurants(string[] theRestaurants) {
         
         Console.Write("Enter the restaurant you'd like to delete: ");
         string restaurantToDelete = Console.ReadLine();
         int deletions = 0;
 
         for(int i = 0; i < theRestaurants.Length; i++) {
+            
+            if(theRestaurants[i] == null || theRestaurants[i] == "") {
+                continue;
+            }
+
             string[] subs = theRestaurants[i].Split('|');
-            Console.Write(subs[0]);
-            if(theRestaurants[i] == subs[0]) {
-                theRestaurants[i] = theRestaurants[i].Replace(restaurantToDelete, "");
+            if(restaurantToDelete == subs[0]) {
+                theRestaurants[i] = "";
                 deletions++;
             }
 
         }
 
-        Console.WriteLine("There were " + deletions + " deletions... ");
+        Console.WriteLine("There were " + deletions + " deletion(s)... Returning to main menu...\n");
         return theRestaurants;
 
     }
@@ -201,22 +236,22 @@ class helloworld {
 
                 case 'C':
                     Console.WriteLine("Creating restaurants...\n");                
-                    theRestaurants = createrestaurants(theRestaurants);
+                    theRestaurants = createRestaurants(theRestaurants);
                     continue;
 
                 case 'R':
-                    Console.WriteLine("Reading restaurants...\n");                
+                    Console.WriteLine("Reading restaurants...");                
                     theRestaurants = readrestaurants(theRestaurants);
                     continue;
 
                 case 'U':
                     Console.WriteLine("Updating restaurants...\n");
-                    theRestaurants = updaterestaurants(theRestaurants);
+                    theRestaurants = updateRestaurants(theRestaurants);
                     break;
 
                 case 'D':
                     Console.WriteLine("Deleting restaurants...\n");
-                    theRestaurants = deleterestaurants(theRestaurants);
+                    theRestaurants = deleteRestaurants(theRestaurants);
                     break;
 
                 case 'Q':
