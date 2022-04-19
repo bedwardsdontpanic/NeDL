@@ -18,8 +18,8 @@ Seventeen|5
 Eighteen|3
 Ninteen|4
 Twenty|2
-Twentyone|1
+Generic|3
 Twentytwo|2
 Twentythree|3
-Twentyfour|4
+
 Twentyfive|5

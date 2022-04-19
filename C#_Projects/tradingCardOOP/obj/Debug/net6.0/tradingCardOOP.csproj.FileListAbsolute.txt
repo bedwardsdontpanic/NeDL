@@ -1,0 +1,15 @@
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\bin\Debug\net6.0\tradingCardOOP.exe
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\bin\Debug\net6.0\tradingCardOOP.deps.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\bin\Debug\net6.0\tradingCardOOP.runtimeconfig.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\bin\Debug\net6.0\tradingCardOOP.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\bin\Debug\net6.0\ref\tradingCardOOP.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\bin\Debug\net6.0\tradingCardOOP.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\tradingCardOOP.csproj.AssemblyReference.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\tradingCardOOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\tradingCardOOP.AssemblyInfoInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\tradingCardOOP.AssemblyInfo.cs
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\tradingCardOOP.csproj.CoreCompileInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\tradingCardOOP.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\ref\tradingCardOOP.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\tradingCardOOP.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\tradingCardOOP\obj\Debug\net6.0\tradingCardOOP.genruntimeconfig.cache
