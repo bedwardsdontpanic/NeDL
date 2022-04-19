@@ -1,0 +1,15 @@
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\bin\Debug\net6.0\inheritancePrac.exe
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\bin\Debug\net6.0\inheritancePrac.deps.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\bin\Debug\net6.0\inheritancePrac.runtimeconfig.json
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\bin\Debug\net6.0\inheritancePrac.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\bin\Debug\net6.0\ref\inheritancePrac.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\bin\Debug\net6.0\inheritancePrac.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\inheritancePrac.csproj.AssemblyReference.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\inheritancePrac.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\inheritancePrac.AssemblyInfoInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\inheritancePrac.AssemblyInfo.cs
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\inheritancePrac.csproj.CoreCompileInputs.cache
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\inheritancePrac.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\ref\inheritancePrac.dll
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\inheritancePrac.pdb
+C:\Users\BEdwards\Desktop\NeDL\C#_Projects\inhPrac\obj\Debug\net6.0\inheritancePrac.genruntimeconfig.cache

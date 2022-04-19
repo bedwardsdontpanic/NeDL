@@ -1,18 +1,19 @@
+#pragma warning disable 8604, 8600, 8601, 8602, 8618, 8625
+
+
 using System;
 
-namespace helloWorld
-{
-  class TradingCard
-    {        
+namespace tradingCardProgram {
+    class TradingCard {        
         // Two pieces of data are being stored for each object.  
-        // cardName is the restaurant name.  To show the difference in how values can be stored,
+        // cardName is the card name.  To show the difference in how values can be stored,
         // cardName will be an instance variable.
-        // value is the restaurant rating.  To show the difference in how values can be stored,
+        // value is the card vard.  To show the difference in how values can be stored,
         // value will be an automatic property.
 
         // This is the instance variable so it must be declared.  It's private so only methods of the 
         // object can access it.
-        private string cardName;  // restaurant name
+        private string cardName;  // card name
 
         // This is the automatic property variable.  The get and set methods are being created too.
         public double value  // property
@@ -48,21 +49,6 @@ namespace helloWorld
             return "Card: " + cardName + ", value: " + value;
         }
 
-        public TradingCard getNewCard() {
-            TradingCard theCard = new TradingCard();
-            
-            Console.Write("Card name: ");
-            string cardName = Console.ReadLine();
-            
-            Console.Write("Card Value: ");
-            string valueInput = Console.ReadLine();
-            double cardValue = Convert.ToInt16(valueInput);
-            
-            theCard.cardName = cardName;
-            theCard.value = cardValue;
-
-            return theCard;
-        }
 
     }
 }
