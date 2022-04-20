@@ -1,7 +1,7 @@
 namespace animalProgram {
     class Animal {  // base class (parent) 
-        protected string animalName;  
-        protected double animalWeight;
+        public string animalName;  
+        public double animalWeight;
         public string getAnimalName() {
             return animalName; 
         }
@@ -31,6 +31,10 @@ namespace animalProgram {
 
         public override string ToString() {
             return "Name: " + animalName + ", Weight: " + animalWeight;
+        }
+
+        public virtual void makeSound() {
+            Console.WriteLine("generic sound");
         }
     }
 }

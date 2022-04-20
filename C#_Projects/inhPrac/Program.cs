@@ -1,4 +1,4 @@
-﻿#pragma warning disable 8604, 8600, 8601, 8602
+﻿#pragma warning disable 8604, 8600, 8601, 8602, 8974
 
 namespace animalProgram {
     class helloworld {
@@ -12,9 +12,10 @@ namespace animalProgram {
             theAnimals.Add(new Reptile("Lizard", 5, 5, 15));
             theAnimals.Add(new Animal("Basic Animal", 0));
 
-
             foreach(Animal theAnimal in theAnimals){
                 Console.WriteLine(theAnimal);
+                theAnimal.makeSound();
+                
             }
 
         }

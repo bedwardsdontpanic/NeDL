@@ -1,8 +1,8 @@
 namespace animalProgram {
 
     class Bird: Animal {  // base class (parent) 
-        protected double wingSpan;  
-        protected double flightSpeed;
+        public double wingSpan { get; set; }
+        public double flightSpeed { get; set; }
 
         public Bird(string newAnimal, double newWeight, double newFlightSpeed, double newWingSpan) {
             animalName = newAnimal;
@@ -18,6 +18,10 @@ namespace animalProgram {
 
         public override string ToString() {
             return "Name: " + animalName + ", Weight: " + animalWeight + " lbs, Wingspan: " + wingSpan + " inches, flight speed: " + flightSpeed +" MPH";
+        }
+
+        public override void makeSound() {
+            Console.WriteLine("cacaw");
         }
     }    
 }

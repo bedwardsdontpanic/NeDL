@@ -1,8 +1,8 @@
 namespace animalProgram {
 
     class Mammal: Animal {  // base class (parent) 
-        protected double numLegs;  
-        protected double furLength;
+        public double numLegs { get; set; }
+        public double furLength { get; set; }
 
         public Mammal(string newAnimal, double newWeight, double newfurLength, double newnumLegs) {
             animalName = newAnimal;
@@ -18,6 +18,10 @@ namespace animalProgram {
 
         public override string ToString() {
             return "Name: " + animalName + ", Weight: " + animalWeight + " lbs, numLegs: " + numLegs + ", average fur length: " + furLength + " inches";
+        }
+
+        public override void makeSound() {
+            Console.WriteLine("Ahhh");
         }
     }    
 }
