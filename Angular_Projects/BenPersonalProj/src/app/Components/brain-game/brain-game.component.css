@@ -122,3 +122,9 @@ background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
 75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
 100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
 }
+
+table{
+    width: 10%;
+    margin-left:auto; 
+    margin-right:auto;
+}

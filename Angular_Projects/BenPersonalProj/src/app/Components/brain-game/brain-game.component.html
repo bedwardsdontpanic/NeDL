@@ -30,11 +30,30 @@
         <button id="answerButton" (click)="correctorIncorrect(ans4)">{{ans4}}</button>
     </div>
 
-    <countdown #countdown  [config]="{leftTime: 60}" >$!m!:$!s!</countdown>
 
+    <countdown #countdown  [config]="{leftTime: timeData}" >$!m!:$!s!</countdown>
     <div *ngIf="showResults">
         <h6><b>Final Score</b>: {{numOfCorrectAns}} / {{10 - questionsRemaing}}</h6>
     </div>
 
+    <button type="button" class="btn btn-success" id="answerButton" (click)="startGame()" *ngIf="showResults">Play again!</button>
+
+    <table class="table table-dark table-sm"  *ngIf="showResults">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <hr>
+            <div class="all-results" *ngFor="let results of results">
+              <td>{{results.theUser}}</td>
+              <td>{{results.theScore}}</td>
+            </div>
+          </tr>
+        </tbody>
+      </table>
 
 </body>

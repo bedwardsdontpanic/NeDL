@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Theme } from '@fullcalendar/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CountdownModule, CountdownComponent } from 'ngx-countdown';
+import { HighScore } from 'src/app/Objects/HighScores';
 
 
 @Component({
@@ -23,6 +25,9 @@ export class BrainGameComponent implements OnInit {
   numOfCorrectAns: number;
   showResults: boolean;
   showConfetti: boolean;
+  timeData;
+  nextResult: HighScore;
+  results: HighScore[];
   @ViewChild('countdown') counter: CountdownComponent;
 
   constructor(private modalService: NgbModal) { }
@@ -35,10 +40,15 @@ export class BrainGameComponent implements OnInit {
     this.showResults = false;
     this.numOfCorrectAns = 0;
     this.showConfetti = false;
+    this.timeData = "0"
+    this.nextResult = null;
+
   }
 
   startGame() {
-    this.counter.begin();
+    this.showResults = false;
+    this.timeData = "60";
+    this.counter.restart();
     this.numOfCorrectAns = 0;
     this.questionsRemaing = 10;
     console.log('game started');
@@ -46,6 +56,7 @@ export class BrainGameComponent implements OnInit {
     this.showStart = false;
     this.showConfetti = false;
     this.changeVars(this.Var1, this.Var2, this.trueAns, this.correct);
+    this.results = [];
   }
 
   changeVars(Var1, Var2, ans, correct) {
@@ -95,12 +106,25 @@ export class BrainGameComponent implements OnInit {
   }
 
   endGame() {
+
+
+    this.nextResult = {
+      theScore: this.counter.left + (this.numOfCorrectAns*100000),
+      theDate: new Date().toTimeString(),
+      theUser: 'User X'
+    };
+    
+    console.log(this.nextResult.theDate);
+    console.log(this.nextResult.theScore);
+    this.results.push(this.nextResult);
+
     this.showGame = false;
     this.showStart = true;
     this.showResults = true;
     this.showConfetti = true;
     this.counter.stop();
     console.log('Game Over');
+
   }
 
 }
