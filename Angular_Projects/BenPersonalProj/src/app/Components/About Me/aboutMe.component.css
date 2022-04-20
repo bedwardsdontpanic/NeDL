@@ -1,0 +1,111 @@
+body {
+    height: 100%;
+    position: fixed;
+    min-width: 100%;
+    background-image: url("https://wallpaperaccess.com/full/763842.png");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+  .pulseBox {
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    width: 240px;
+    height: 240px;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 0 0 pink;
+    animation: pulse 2.2s infinite;
+    z-index: -1;
+    border-radius: 25px;
+  }
+  .pulseBox:hover {
+    animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(57, 204, 44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 20px rgba(49, 204, 44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 15px rgba(44, 204, 52, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+    }
+  }
+
+.linkedin {
+  position: absolute;
+  top: 30%; 
+  left: 79%
+}
+
+.github {
+  position: absolute;
+  top: 30%; 
+  left: 18%
+}
+
+
+  .imgBox{
+      position: absolute;
+      top:-10%;
+      left: -10%;
+  }
+
+
+  .pulseCircle {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 0 0 pink;
+    animation: pulse 2.2s infinite;
+    z-index: -1;
+  }
+  .pulseCircle:hover {
+    animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      -webkit-box-shadow: 0 0 0 0 rgba(57, 204, 44, 0.4);
+    }
+    70% {
+      transform: scale(5);
+        -webkit-box-shadow: 0 0 0 20px rgba(49, 204, 44, 0);
+    }
+    100% {
+      transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 30px rgba(44, 204, 52, 0);
+    }
+  }
+  @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+/*"https://wallpapercave.com/wp/wp3379962.jpg"*/
+
+

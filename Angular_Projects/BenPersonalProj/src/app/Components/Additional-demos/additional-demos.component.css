@@ -1,0 +1,30 @@
+body {
+    height: 100%;
+    position: fixed;
+    min-width: 100%;
+    background-image: url("/assets/demos-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Merienda One', cursive;
+    color: orange;
+}
+
+
+.appsList {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .appsList li {
+    position: relative;
+    padding: 100px;
+  }
+
+  
+  .linkChange {
+    display: flex;
+    justify-content: center;
+  }
