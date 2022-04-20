@@ -1,0 +1,32 @@
+<body>
+    <button type="button" class="btn btn-info">Create a list item</button>
+    
+    <div class = "headings">
+        <h1>To Do list</h1>
+    </div>
+
+    <div class='table responsive' id="hideTable">
+        <table class = 'table'>
+            <thead>
+                <tr>
+                    <th>Item No.</th>
+                    <th>Complete?</th>
+                    <th>Name</th>
+                    <th>Additional Info</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr *ngFor='let temp of itemList'>
+                    <td class="itemNo">{{temp.itemNumber}}</td>
+                    <td class="checkBox">
+                        <input type="checkbox">
+                    </td>
+                    <td class=itemName>{{temp.name}}</td>
+                    <td class="additionalNotes">{{temp.additionalNotes}}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+</body>
