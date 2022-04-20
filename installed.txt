@@ -1,0 +1,9 @@
+jquery
+bootstrap
+npm install --save ngb-modal
+npm install --save @ng-bootstrap/ng-bootstrap
+npm install -g igniteui-cli 
+npm install igniteui-angular
+npm install hammerjs
+npm install --save angular-animate
+npm install ng-starrating
