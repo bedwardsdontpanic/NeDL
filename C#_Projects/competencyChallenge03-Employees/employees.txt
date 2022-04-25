@@ -1,0 +1,5 @@
+xx|xx|salary|100000
+firstname2|lastname2|hourly|17
+yy|yy|salary|80000
+new|guy|salary|50000
+first|last|salary|86000
