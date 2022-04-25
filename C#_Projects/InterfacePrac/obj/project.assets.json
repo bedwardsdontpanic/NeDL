@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\inheritancePrac\\inheritancePrac.csproj",
-      "projectName": "inheritancePrac",
-      "projectPath": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\inheritancePrac\\inheritancePrac.csproj",
+      "projectUniqueName": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\competencyChallenge03\\competencyChallenge03.csproj",
+      "projectName": "competencyChallenge03",
+      "projectPath": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\competencyChallenge03\\competencyChallenge03.csproj",
       "packagesPath": "C:\\Users\\BEdwards\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\inheritancePrac\\obj\\",
+      "outputPath": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\competencyChallenge03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BEdwards\\AppData\\Roaming\\NuGet\\NuGet.Config",

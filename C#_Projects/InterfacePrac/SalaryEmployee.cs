@@ -5,18 +5,10 @@
 
 public class SalaryEmployee: Employee {
 
-    private double annualSalary;
-
-    public double AnnualSalary {
-          
-        get {
-            return annualSalary;    
-        }
-          
-        set {
-            annualSalary = value;
-        }
+    public double annualSalary {
+        get; set; 
     }
+
 
     public SalaryEmployee() {
         this.annualSalary = -1;
@@ -24,10 +16,10 @@ public class SalaryEmployee: Employee {
 
     public SalaryEmployee(double annualSalary, string firstName, string lastName, string employeeType)
         : base(firstName, lastName, employeeType) {
-        this.AnnualSalary = annualSalary;
-        this.FirstName = firstName;
-        this.LastName = lastName;
-        this.EmployeeType = employeeType;
+        this.annualSalary = annualSalary;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.employeeType = employeeType;
     }
 
     public override double calculateBonus() {
@@ -36,11 +28,11 @@ public class SalaryEmployee: Employee {
     }
 
     public override string ToString() {
-            return "First Name: " + FirstName + ", Last name: " + LastName + ", type: " + EmployeeType + ", annual salary: " + AnnualSalary + ", bonus: "  + calculateBonus();
+            return "First Name: " + firstName + ", Last name: " + lastName + ", type: " + employeeType + ", annual salary: " + annualSalary + ", bonus: "  + calculateBonus();
     }
 
     public override string toFileFormat() {
-        return FirstName + "|" + LastName + "|" + EmployeeType + "|" + AnnualSalary;
+        return firstName + "|" + lastName + "|" + employeeType + "|" + annualSalary;
     }
 
 }

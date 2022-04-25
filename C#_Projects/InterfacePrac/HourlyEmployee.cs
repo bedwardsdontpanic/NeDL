@@ -3,18 +3,10 @@
 
 public class HourlyEmployee: Employee {
 
-    private double hourlyRate;
+    public double hourlyRate {
+        get; set;
+    } 
 
-    public double HourlyRate {
-          
-        get {
-            return hourlyRate;    
-        }
-          
-        set {
-            hourlyRate = value;
-        }
-    }
 
     public HourlyEmployee() {
         this.hourlyRate = -1;
@@ -24,9 +16,9 @@ public class HourlyEmployee: Employee {
         : base(firstName, lastName, employeeType) 
     {
         this.hourlyRate = hourlyRate;
-        this.FirstName = firstName;
-        this.LastName = lastName;
-        this.EmployeeType = employeeType;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.employeeType = employeeType;
     }
 
     public override double calculateBonus() {
@@ -35,11 +27,11 @@ public class HourlyEmployee: Employee {
     }
 
     public override string ToString() {
-            return "First Name: " + FirstName + ", Last name: " + LastName + ", type: " + EmployeeType + ", hourly rate: " + HourlyRate + ", bonus: " + calculateBonus();
+            return "First Name: " + firstName + ", Last name: " + lastName + ", type: " + employeeType + ", hourly rate: " + hourlyRate + ", bonus: " + calculateBonus();
     }
 
     public override string toFileFormat() {
-        return FirstName + "|" + LastName + "|" + EmployeeType + "|" + HourlyRate;
+        return firstName + "|" + lastName + "|" + employeeType + "|" + hourlyRate;
     }
 
 }

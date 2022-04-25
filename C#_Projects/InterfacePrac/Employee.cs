@@ -2,39 +2,14 @@
 
 public class Employee {
 
-    private string firstName;
-    private string lastName;
-    private string employeeType;
-    public String FirstName {
-          
-        get {
-            return firstName;    
-        }
-          
-        set {
-            firstName = value;
-        }
+    public string firstName{
+        get; set;
     }
-    public String LastName {
-          
-        get {
-            return lastName;    
-        }
-          
-        set {
-            lastName = value;
-        } 
+    public string lastName{
+        get; set;
     }
-
-    public String EmployeeType {
-          
-        get {
-            return employeeType;    
-        }
-          
-        set {
-            employeeType = value;
-        } 
+    public string employeeType{
+        get; set;
     }
 
     public Employee() {

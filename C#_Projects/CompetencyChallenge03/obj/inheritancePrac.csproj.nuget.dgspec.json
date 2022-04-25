@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\troubleshooting\\troubleshooting.csproj": {}
+    "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\inheritancePrac\\inheritancePrac.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\troubleshooting\\troubleshooting.csproj": {
+    "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\inheritancePrac\\inheritancePrac.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\troubleshooting\\troubleshooting.csproj",
-        "projectName": "troubleshooting",
-        "projectPath": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\troubleshooting\\troubleshooting.csproj",
+        "projectUniqueName": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\inheritancePrac\\inheritancePrac.csproj",
+        "projectName": "inheritancePrac",
+        "projectPath": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\inheritancePrac\\inheritancePrac.csproj",
         "packagesPath": "C:\\Users\\BEdwards\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\troubleshooting\\obj\\",
+        "outputPath": "C:\\Users\\BEdwards\\Desktop\\NeDL\\C#_Projects\\inheritancePrac\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BEdwards\\AppData\\Roaming\\NuGet\\NuGet.Config",
