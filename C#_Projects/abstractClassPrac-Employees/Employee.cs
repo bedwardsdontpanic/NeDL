@@ -26,11 +26,10 @@ abstract class Employee {
 
     public abstract double getBonus();
 
+    public abstract string toFileFormat();
 
     public override string ToString() {
-            return "First Name: " + firstName + ", Last name: " + lastName + ", type: " + employeeType;
+        return "First Name: " + firstName + ", Last name: " + lastName + ", type: " + employeeType;
     }
-
-    public abstract string toFileFormat();
 
 }

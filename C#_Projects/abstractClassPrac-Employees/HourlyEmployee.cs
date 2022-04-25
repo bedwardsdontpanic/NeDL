@@ -7,22 +7,19 @@ class HourlyEmployee: Employee {
         get; set;
     } 
 
-
     public HourlyEmployee() {
         this.hourlyRate = -1;
     }
 
     public HourlyEmployee(double hourlyRate, string firstName, string lastName, string employeeType)
-        : base(firstName, lastName, employeeType) 
-    {
+        : base(firstName, lastName, employeeType) {
         this.hourlyRate = hourlyRate;
         this.firstName = firstName;
         this.lastName = lastName;
         this.employeeType = employeeType;
     }
 
-    public override double getBonus() // implementation of abstract method
-    {
+    public override double getBonus() {
         return hourlyRate * 80;
     }
 

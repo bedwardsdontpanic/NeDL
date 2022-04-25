@@ -42,6 +42,7 @@ export class BrainGameComponent implements OnInit {
     this.showConfetti = false;
     this.timeData = "0"
     this.nextResult = null;
+    this.results = new Array<HighScore>(10);
 
   }
 
@@ -56,7 +57,7 @@ export class BrainGameComponent implements OnInit {
     this.showStart = false;
     this.showConfetti = false;
     this.changeVars(this.Var1, this.Var2, this.trueAns, this.correct);
-    this.results = [];
+
   }
 
   changeVars(Var1, Var2, ans, correct) {
@@ -106,8 +107,6 @@ export class BrainGameComponent implements OnInit {
   }
 
   endGame() {
-
-
     this.nextResult = {
       theScore: this.counter.left + (this.numOfCorrectAns*100000),
       theDate: new Date().toTimeString(),
@@ -116,10 +115,17 @@ export class BrainGameComponent implements OnInit {
     
     console.log(this.nextResult.theDate);
     console.log(this.nextResult.theScore);
-    this.results.push(this.nextResult);
+//    this.results.push(this.nextResult);
+
+    for(let i = 0; i < this.results.length; i++){
+      if(this.results[i] == null){
+        this.results[i] = this.nextResult;
+        break;
+      }
+    }
 
     this.showGame = false;
-    this.showStart = true;
+    this.showStart = false;
     this.showResults = true;
     this.showConfetti = true;
     this.counter.stop();

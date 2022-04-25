@@ -22,8 +22,7 @@ class SalaryEmployee: Employee {
         this.employeeType = employeeType;
     }
 
-    public override double getBonus() // implementation of abstract method
-    {
+    public override double getBonus() {
         return annualSalary * .1;
     }
 
