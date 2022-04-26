@@ -1,0 +1,60 @@
+using System;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+
+namespace BenTestingStuff
+{
+    class MySqlCreate
+    {
+        static async Task Main(string[] args)
+        {
+            var builder = new MySqlConnectionStringBuilder
+            {
+                Server = "bentestingstuff.mysql.database.azure.com",
+                Database = "ben",
+                UserID = "benjedwrds",
+                Password = "ZBE3012.",
+                SslMode = MySqlSslMode.Required,
+            };
+
+            using (var conn = new MySqlConnection(builder.ConnectionString))
+            {
+                Console.WriteLine("Opening connection");
+                await conn.OpenAsync();
+
+                using (var command = conn.CreateCommand())
+                {
+                    command.CommandText = "DROP TABLE IF EXISTS highScores;";
+                    await command.ExecuteNonQueryAsync();
+                    Console.WriteLine("Finished dropping table (if existed)");
+
+                    command.CommandText = "CREATE TABLE highScores (id serial PRIMARY KEY, name VARCHAR(50), score INTEGER);";
+                    await command.ExecuteNonQueryAsync();
+                    Console.WriteLine("Finished creating table");
+
+                    command.CommandText = @"INSERT INTO highScores (name, score) VALUES (@name1, @score1),
+                        (@name2, @score2), (@name3, @score3);";
+                    command.Parameters.AddWithValue("@name1", "Jim");
+                    command.Parameters.AddWithValue("@score1", 150);
+                    command.Parameters.AddWithValue("@name2", "Bob");
+                    command.Parameters.AddWithValue("@score2", 154);
+                    command.Parameters.AddWithValue("@name3", "Jimbo");
+                    command.Parameters.AddWithValue("@score3", 100);
+
+                    int rowCount = await command.ExecuteNonQueryAsync();
+                    Console.WriteLine(String.Format("Number of rows inserted={0}", rowCount));
+                }
+
+                // connection will be closed by the 'using' block
+                Console.WriteLine("Closing connection");
+            }
+
+            Console.WriteLine("Press RETURN to exit");
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+Data Source=tcp:bensprojectdbserver.database.windows.net,1433;Initial Catalog=BensProjectdb;User Id=benj.edwrds@bensprojectdbserver;Password=ZBE3012.

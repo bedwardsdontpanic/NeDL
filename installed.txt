@@ -7,6 +7,5 @@ npm install igniteui-angular
 npm install hammerjs
 npm install --save angular-animate
 npm install ng-starrating
-
-//to install
+npm install express sequelize mysql2 cors --save
 npm install --save-exact express@4.17.1 cors@2.8.5 mysql@2.18.1
