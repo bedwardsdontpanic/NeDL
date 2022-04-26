@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Azure.Identity;
 using Microsoft.Data.SqlClient;
+using Azure.Security.KeyVault.Secrets;
 
 namespace BensProject
 {
@@ -22,6 +23,21 @@ namespace BensProject
                 builder.UserID = "benj.edwrds";
                 builder.Password = "ZBE3012.";
                 builder.InitialCatalog = "BensProjectdb";
+                var tenantId = "a4cb79c3-7e45-45d0-8335-29edefd7e9f8";
+                Environment.SetEnvironmentVariable("AZURE_TENANT_ID", tenantId);
+
+                DefaultAzureCredentialOptions options = new DefaultAzureCredentialOptions()
+                {
+                    VisualStudioTenantId = tenantId,
+                    SharedTokenCacheTenantId = tenantId
+                };
+
+//var client = new SecretClient(new Uri("https://sts.windows.net/a4cb79c3-7e45-45d0-8335-29edefd7e9f8"), new DefaultAzureCredential());
+
+                /*                var client = new SecretClient(
+                                             new Uri(key - vault - url),
+                                             new DefaultAzureCredential(options)
+                                             );*/
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
