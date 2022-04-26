@@ -1,0 +1,4 @@
+First|Last|salary|90000
+Jim|Bo|hourly|25
+The|Name|salary|120000
+New|Guy|hourly|21

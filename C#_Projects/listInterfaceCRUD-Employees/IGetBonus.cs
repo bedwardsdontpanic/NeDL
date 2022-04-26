@@ -1,0 +1,3 @@
+interface IGetBonus {
+    double getBonus();
+}

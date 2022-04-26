@@ -1,0 +1,4 @@
+interface IFileFormat {
+    string toFileFormat();
+
+}
