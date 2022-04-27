@@ -1,0 +1,70 @@
+<body>
+    <div class="showConfetti" *ngIf="showConfetti">
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+    </div>
+    
+    <br>
+    <h5>Press Start to see how fast you can answer simple math questions. Your time will be recorded!</h5>
+    <br>
+    <button type="button" class="btn btn-success" id="answerButton" (click)="startGame()" *ngIf="showStart">Start!</button>
+    <br><br>
+
+    <div class = "gameDiv" *ngIf="showGame">
+        <h5>Solve for x:</h5>
+        <h6>{{Var1}} - x = {{trueAns}}?</h6>
+        <h6>Score: {{numOfCorrectAns}} / {{10 - questionsRemaing}}</h6>
+        <button id="answerButton" (click)="correctorIncorrect(ans1)">{{ans1}}</button>
+        <button id="answerButton" (click)="correctorIncorrect(ans2)">{{ans2}}</button>
+        <br>
+        <br>
+        <button id="answerButton" (click)="correctorIncorrect(ans3)">{{ans3}}</button>
+        <button id="answerButton" (click)="correctorIncorrect(ans4)">{{ans4}}</button>
+    </div>
+
+
+  <!-- <countdown #countdown  [config]="{leftTime: timeData}" >$!m!:$!s!</countdown> -->
+    <div *ngIf="showResults">
+      <h6><b>Final Score</b>: {{numOfCorrectAns}} / {{10 - questionsRemaing}}</h6>
+    </div>
+
+    <button type="button" class="btn btn-success" id="answerButton" (click)="startGame()" *ngIf="showResults">Play again!</button>
+
+
+    <table class="table table-bordered text-center" *ngIf="showResults">
+      <caption style="caption-side: top">High Scores</caption>
+      <tr>
+        <th class="text-center">Name</th>
+        <th class="text-center">Score</th>
+      </tr>
+      <ng-container *ngFor="let results of results; let id = index">
+        <tr>
+        <td>
+          <span>{{results.name}}</span>
+        </td>
+        <td>
+          <span>{{results.score}}</span>
+        </td>
+      </tr>
+    
+      <tr *ngFor="let results of results; let id = index">
+        <td>
+          <span>{{results.name}}</span>
+        </td>
+        <td>
+          <span>{{results.score}}</span>
+        </td>
+      </tr>
+      </ng-container>
+    </table>
+  
+
+</body>
