@@ -3,7 +3,6 @@ import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 //import { NgbModal } from 'bootstrap';
 import { HighScore } from '../../Objects/HighScores';
 
-
 @Component({
   selector: 'app-brain-game',
   templateUrl: './brain-game.component.html',
@@ -37,6 +36,7 @@ export class BrainGameComponent implements OnInit {
   }
 
 
+
   ngOnInit(): void {
 
     this.changeVars(this.Var1, this.Var2, this.trueAns, this.correct);
@@ -51,6 +51,9 @@ export class BrainGameComponent implements OnInit {
   }
 
   startGame() {
+    for (let i = 0; i < this.results.length; i++) {
+      console.log(this.results[i]);
+    }
     this.showResults = false;
     this.timeData = "60";
 //    this.counter.restart();
@@ -118,18 +121,22 @@ export class BrainGameComponent implements OnInit {
     };
     
 //    this.results.push(this.nextResult);
-
-    for(let i = 0; i < this.results.length; i++){
-      if(this.results[i] == null){
+    console.log(this.results.length);
+    for (let i = 0; i < this.results.length; i++){
+      if ((this.results[i].score < this.nextResult.score) || this.results[i] == null) {
         this.results[i] = this.nextResult;
         break;
       }
     }
 
+    for (let i = 0; i < this.results.length; i++) {
+      console.log(this.results[i]);
+    }
     this.showGame = false;
     this.showStart = false;
     this.showResults = true;
     this.showConfetti = true;
+
  //   this.counter.stop();
     console.log('Game Over');
 

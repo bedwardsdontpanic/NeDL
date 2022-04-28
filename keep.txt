@@ -135,3 +135,76 @@ namespace BensProject
             });
             }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        [HttpGet]
+        public IEnumerable<HighScore> Get()
+        {
+            HighScore[] theScores = new HighScore[10];
+            try
+            {
+                SqlConnectionStringBuilder builder = Helpers.startConnection();
+
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+
+                    String sql = "SELECT name, score FROM [dbo].[HighScores]";
+
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                Console.WriteLine(reader.GetString(0), reader.GetDecimal(1));
+                                theScores = Enumerable.Range(1, 10).Select(index => new HighScore
+                                {
+                                    name = reader.GetString(0),
+                                    score = reader.GetDecimal(1)
+                                })
+                                .ToArray();
+                            }
+                        }
+                    }
+                }
+            }
+
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return theScores;
+        }

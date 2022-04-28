@@ -4,7 +4,21 @@ namespace Ben_Project
 {
     public class HighScore
     {
-        public int score { get; set; }
+        public decimal score { get; set; }
         public string name { get; set; }
+
+        public HighScore()
+        {
+
+        }
+
+        public HighScore(string name, decimal score)
+        {
+            this.name = name;
+            this.score = score;
+        }
+
+
+
     }
 }
