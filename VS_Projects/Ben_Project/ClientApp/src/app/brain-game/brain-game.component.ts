@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 //import { NgbModal } from 'bootstrap';
 import { HighScore } from '../../Objects/HighScores';
@@ -26,6 +26,7 @@ export class BrainGameComponent implements OnInit {
   timeData;
   nextResult: HighScore;
   public results: HighScore[];
+    http: any;
  // @ViewChild('countdown') counter: CountdownComponent;
 
   // constructor(private modalService: NgbModal) { }
@@ -139,6 +140,13 @@ export class BrainGameComponent implements OnInit {
 
  //   this.counter.stop();
     console.log('Game Over');
+    this.doIt(this.nextResult);
+
+  }
+
+  public doIt(theScore: HighScore) {
+    let baseURL = "";
+    return this.http.post(baseURL + "BrainGame", theScore).subscribe({});
 
   }
 
