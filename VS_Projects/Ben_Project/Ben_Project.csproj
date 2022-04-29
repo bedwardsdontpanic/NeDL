@@ -16,6 +16,9 @@
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.6.0" />
     <PackageReference Include="bootstrap" Version="5.1.3" />
+    <PackageReference Include="Bootstrap3Modal" Version="1.0.0" />
+    <PackageReference Include="DarkSkyApi" Version="3.3.0" />
+    <PackageReference Include="DarkSkyCore" Version="6.0.2" />
     <PackageReference Include="fullcalendar" Version="3.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
@@ -38,6 +41,10 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\Services\file.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Remove="ClientApp\src\app\app-routing.module.ts" />
   </ItemGroup>
 
   <ItemGroup>

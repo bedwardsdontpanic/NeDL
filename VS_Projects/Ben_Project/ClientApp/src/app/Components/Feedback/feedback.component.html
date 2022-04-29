@@ -1,0 +1,95 @@
+<!--<body>
+
+  <br>-->
+  <!-- Text -->
+  <!--<div class = "headingText">
+      <h3>Thanks for taking the time to check out my page!</h3>
+      <br>
+      <h6>Any and all feedback is appreciated. Feel free to use the button to submit some. Thank you!</h6>
+  </div>
+
+  <br>-->
+
+  <!-- Button to open the feedback form -->
+  <!--<div class = "feedbackButton">
+      <button class="btn btn-info" (click)="openWindowCustomClass(content)">Submit feedback</button>
+  </div>-->
+
+
+  <!-- The feedback form modal-->
+  <!--<ng-template #content let-modal>
+      <div class = "modal-content">
+      <div class="modal-header">
+      <h4 class="modal-title">Submit your feedback</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+          <label for="nameInput">Name (Optional):</label>
+          <input #fname type="text" class="form-control" id="nameInput" placeholder="First Last">
+        </div>
+        <div class="form-group">
+          <label for="textFeedback">How is the site?</label>
+          <select input #fpicklist class="form-control" id="textFeedback">
+            <option>Very good</option>
+            <option>Needs work</option>
+            <option>Bad</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="suggestions">Suggestions for Improvement:</label>
+          <textarea type="textarea" input #fsuggestions class="form-control" id="suggestions" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="additionalComments">Additional Comments:</label>
+          <textarea #fcomments class="form-control" id="additionalComments" rows="3"></textarea>
+        </div>
+
+      <div class="rating"> (Optional) Your Rating:
+        <ngb-rating input #frate [(rate)]="currentRate" class = "stars" max=10></ngb-rating>
+      </div>
+    </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="submitForm(fname.value, fpicklist.value, fsuggestions.value, fcomments.value, frate)">Submit</button>
+        <button type="button" class="btn btn-dark" (click)="modal.close('Close click')">Close</button>
+      </div>
+    </div>
+  </ng-template>
+
+  
+  <br><br><br><br><br>
+  <button type="button" class="btn btn-outline-secondary" id="previousFb" (click)="showHideTable()">
+    {{buttonChange == true ? 'Hide Previous Feedback' : 'Show Previous Feedback' }}
+  </button>
+  
+  <div class='table responsive' id="hideTable" *ngIf="showTable">
+    <table class = 'table'>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Feedback Response</th>
+                <th>Suggestions</th>
+                <th>Comments</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let temp of previousFeedback'>
+                <td>{{temp.name}}</td>
+                <td>{{temp.picklist}}</td>
+                <td>{{temp.suggestions}}</td>
+                <td>{{temp.comments}}</td>
+                <td>
+                  <ngb-rating [rate] = temp.rating.rate [readonly]="true"></ngb-rating>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+</body>
+<router-outlet></router-outlet>-->

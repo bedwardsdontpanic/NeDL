@@ -36,7 +36,7 @@ namespace Ben_Project.Controllers
                 SqlConnectionStringBuilder builder = Helpers.startConnection();
                 SqlConnection connection = new SqlConnection(builder.ConnectionString);
 
-                string sql = "SELECT name,score FROM [dbo].[HighScores]";
+                string sql = "SELECT TOP 10 name,score FROM HighScores ORDER BY score DESC";
                 using (var command = new SqlCommand(sql, connection))
                 {
                     connection.Open();
@@ -66,6 +66,8 @@ namespace Ben_Project.Controllers
         [HttpPost]
         public void Post([FromBody] HighScore theScore)
         {
+            Console.WriteLine("in post method for highscore");
+            Console.WriteLine("INFO: " + theScore.name + theScore.score + " END INFO");
             SqlConnectionStringBuilder builder = Helpers.startConnection();
             SqlConnection connection = new SqlConnection(builder.ConnectionString);
 
