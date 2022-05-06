@@ -1,0 +1,95 @@
+<body>
+
+  <h1 class = "headings" id="headings">Welcome</h1>
+  <br>
+  <h3 class = "subheadings" id="subheadings">Where would you like to go?</h3>
+
+  <br>
+
+  <ul class ="linksList">
+    <li>
+      <a routerLink="/overview" routerLinkActive="active" class="linkChange" id="boxedSquiggle">
+        <h6 class = "listHeadings">Overview</h6>
+        <img src="https://img.icons8.com/nolan/128/overview-pages-2.png">
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/demos" routerLinkActive="active" class="linkChange" id="boxedSquiggle">
+        <h6 class = "listHeadings">Application Demos</h6>
+        <img src="https://img.icons8.com/nolan/128/computer.png">
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/aboutMe" routerLinkActive="active" class="linkChange" id="boxedSquiggle">
+        <h6 class = "listHeadings">About Me</h6>
+        <img src="https://img.icons8.com/nolan/128/person-male.png">
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/feedback" routerLinkActive="active" class="linkChange" id="boxedSquiggle">
+        <h6 class = "listHeadings">Give Feedback</h6>
+        <img src="https://img.icons8.com/nolan/128/feedback.png">
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/additional" routerLinkActive="active" class="linkChange" id="boxedSquiggle">
+        <h6 class = "listHeadings">Additional Demos</h6>
+        <img src="https://img.icons8.com/nolan/128/plus.png">
+      </a>
+    </li>
+
+  </ul>
+
+
+<br><br><br>
+
+
+
+  <table class="table table-dark" style ="width: 100%;" style="float: right;" id="homeTable">
+    <tr style="text-align: center;">
+        <th width = "15%"></th>
+        <th width = "20%">Page</th>
+        <th width = "70%">Description</th>
+    </tr>
+    <tr style="text-align: center;">
+      <td width><img src="https://img.icons8.com/nolan/128/overview-pages-2.png"></td>
+      <td width><a routerLink="/overview" routerLinkActive="active" class="linkChange" id="squiggles">Overview</a></td>
+      <td width>An overview of what the site offers and the tools used to create it</td>
+  </tr>
+    <tr style="text-align: center;">
+      <td><img src="https://img.icons8.com/nolan/128/computer.png"></td>
+      <td><a routerLink="/demos" routerLinkActive="active" class="linkChange" id="squiggles">Demos</a></td>
+      <td>A place to demo some apps</td>
+    </tr>
+    <tr style="text-align: center;">
+      <td><img src="https://img.icons8.com/nolan/128/person-male.png"></td>
+      <td><a routerLink="/aboutMe" routerLinkActive="active" class="linkChange" id="squiggles">About Me</a></td>
+      <td>Links to sites such as LinkedIn and Github</td>
+    </tr>
+    <tr style="text-align: center;">
+      <td><img src="https://img.icons8.com/nolan/128/feedback.png"></td>
+      <td><a routerLink="/feedback" routerLinkActive="active" class="linkChange" id="squiggles">Feedback</a></td>
+      <td>View previous feedback or submit your own and tell me what you thought of the site</td>
+    </tr>
+    <tr style="text-align: center;">
+      <td><img src="https://img.icons8.com/nolan/128/plus.png"></td>
+      <td><a routerLink="/additional" routerLinkActive="active" class="linkChange" id="squiggles">Additional Demos</a></td>
+      <td>See some apps that are still in work</td>
+    </tr>
+  </table>
+
+<br><br>
+
+  <div class = "currentTime">The Time: {{fullTime}}</div>
+  <br>
+  <div class = "currentDate">The Date: {{fullDate}}</div>
+
+
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+</body>
