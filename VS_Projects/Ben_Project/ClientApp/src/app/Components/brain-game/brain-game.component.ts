@@ -35,6 +35,7 @@ export class BrainGameComponent implements OnInit {
     http.get<HighScore[]>(baseUrl + 'BrainGame').subscribe(result => {
       this.results = result;
     }, error => console.error(error));
+    this.showStart = false;
   }
 
 
@@ -43,13 +44,12 @@ export class BrainGameComponent implements OnInit {
 
     this.changeVars(this.Var1, this.Var2, this.trueAns, this.correct);
     this.showGame = false;
-    this.showStart = true;
     this.showResults = false;
     this.numOfCorrectAns = 0;
     this.showConfetti = false;
     this.timeData = "0"
     this.nextResult = null;
-
+    this.showStart = true;
   }
 
   startGame() {

@@ -243,9 +243,6 @@ class helloworld {
         theMemberships = loadFileIntoList();
 
         theMemberships.RemoveAll(x => x.membershipId == theId);
-
-        Console.WriteLine(theMemberships.Count());
-
         File.WriteAllText("Memberships.txt", String.Empty);
 
         using(StreamWriter SW = new StreamWriter("Memberships.txt")) {

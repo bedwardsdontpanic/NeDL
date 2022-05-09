@@ -1,5 +1,4 @@
 0001|Corporate|100|200
 0002|Executive|300|300
-0003|Nonprofit|250|250
-0004|Regular|185|100
-0005|Nonprofit|200|250
+0004|Regular|200|100
+0005|Executive|600|300
