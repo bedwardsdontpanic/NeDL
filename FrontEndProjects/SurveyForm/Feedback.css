@@ -1,0 +1,26 @@
+body{
+    background-color: lightblue;
+}
+
+.modal-body {
+    background-color: darkgray;
+    padding:9px 15px;
+    color:#000;
+    font-family:Verdana, sans-serif;
+ }
+
+ .modal-header {
+ background-color: darkgray;
+ padding:9px 15px;
+ color:#000;
+ font-family:Verdana, sans-serif;
+
+}
+
+.modal-footer {
+    background-color: darkgray;
+    padding:9px 15px;
+    color:#000;
+    font-family:Verdana, sans-serif;
+
+   }

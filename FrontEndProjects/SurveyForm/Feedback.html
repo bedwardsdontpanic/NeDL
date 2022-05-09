@@ -1,0 +1,84 @@
+<head> 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css” integrity=“sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=“anonymous”>
+
+    <link rel ="stylesheet" href="Feedback.css">
+    <script src="Feedback.js"></script>
+</head>
+
+<body> 
+    <!-- Button to open the feedback form -->
+    <div class = "feedbackButton">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#feedbackModal">Submit feedback</button>
+    </div>
+    <!-- The feedback form modal-->
+        <div class = "modal fade" id="feedbackModal">
+        <div class = "modal-content">
+        
+        <div class="modal-header">
+            <h4 class="modal-title">Submit your feedback</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        
+        <div class="modal-body">
+
+            <label for="nameInput">Name:</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="First Last">
+            <br>
+
+
+            <label for="textFeedback">How is the site?</label>
+            <select input class="form-control" id="textFeedback">
+                <option>Very good</option>
+                <option>Needs work</option>
+                <option>Bad</option>
+            </select>
+            <br>
+
+
+            <label for="suggestions" id = "theSuggestions">Suggestions for Improvement:</label>
+            <textarea type="textarea" input class="form-control" id="suggestions" rows="2"></textarea>
+            <br>
+
+
+            <label for="additionalComments" id = "theComments">Additional Comments:</label>
+            <textarea #fcomments class="form-control" id="additionalComments" rows="3"></textarea>
+            <br>
+
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id = "theCheckbox">
+                <label class="custom-control-label" for="customCheck1" id = "checkboxInput">Submit anonymously?</label><br>
+            </div>
+            <br>
+
+
+            <div class="theOptions">
+                <label>Would you recommend to your friends?</label>
+                <input type="radio" name="options" value="Yes"/>  Yes
+                <input type="radio" name="options" value="No"/>  No
+                <input type="radio" name="options" value="No Answer"/>  No Answer     
+            </div>
+            <br>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type ="button" class="btn btn-success" onclick="submitFeedback()" data-dismiss="modal" id="theButton">Submit</button>
+        </div>
+      </div>
+      </div>
+
+  <h6 id = "theFeedback"> Feedback will be displayed here</h1>
+
+  </body>
+
+  
