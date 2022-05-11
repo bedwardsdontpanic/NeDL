@@ -4,19 +4,19 @@ function alogrithm1(theText, listItem)
     theText = theText.toString().toLowerCase();
     var j = theText.length -1;
     
-    for( let i = 0 ; i < j/2 ;i++)
+    for(var i = 0 ; i < j/2 ;i++)
     {
         var front = theText[i];
         var back = theText[j-i];
         if(front != back)
         {
-            listItem.innerHTML+=": FALSE"
+            listItem.innerHTML += ": FALSE"
             list1.appendChild(listItem);
             return false;
         }
     }
 
-    listItem.innerHTML+=": TRUE"
+    listItem.innerHTML += ": TRUE"
     list1.appendChild(listItem);
     return true;
 }
@@ -29,12 +29,12 @@ function alogrithm2(theText, listItem)
     var reversed = theText.split('').reverse().join('');
     if(theText == reversed)
     {
-        listItem.innerHTML+=": TRUE"
+        listItem.innerHTML += ": TRUE"
         list2.appendChild(listItem);
     }
     else
     {
-        listItem.innerHTML+=": FALSE"
+        listItem.innerHTML += ": FALSE"
         list2.appendChild(listItem);
     }
 }
