@@ -2,12 +2,12 @@ function alogrithm1(theText, listItem)
 {
     var list1 = document.getElementById("List1");
     theText = theText.toString().toLowerCase();
-    let j = theText.length -1;
+    var j = theText.length -1;
     
     for( let i = 0 ; i < j/2 ;i++)
     {
-        let front = theText[i];
-        let back = theText[j-i];
+        var front = theText[i];
+        var back = theText[j-i];
         if(front != back)
         {
             listItem.innerHTML+=": FALSE"
@@ -26,7 +26,7 @@ function alogrithm2(theText, listItem)
 
     var list2 = document.getElementById("List2");
     theText = theText.toString().toLowerCase();
-    var reversed = theText.split( '' ).reverse( ).join( '' );
+    var reversed = theText.split('').reverse().join('');
     if(theText == reversed)
     {
         listItem.innerHTML+=": TRUE"
