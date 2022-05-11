@@ -1,0 +1,30 @@
+<head>
+    <script src="CentralTendency.js"></script>
+    <link rel ="stylesheet" href="CentralTendency.css">
+</head>
+
+<body>
+
+    <div class = "theDivs">
+        <p>Number to enter: </p><input type="number" id="theNumber"/>
+        <button onclick="addItem()">Include entered number</button>
+        <button onclick="clearList()">Clear the list</button>
+    </div>
+
+    <div class = "theDivs">
+        <p><strong>Numbers entered:</strong></p>
+        <ul id="enteredNums"></ul>
+    </div>
+
+    <div class = "theDivs">
+        <p><strong>Central Tendencies:</strong></p>
+        <ul id="centralTendencies">
+            <p>Mean: </p>
+            <li id = "mean"></li>
+            <p>Median: </p>
+            <li id = "median"></li>
+            <p>Mode: </p>
+            <li id = "mode"></li>
+        </ul>
+    </div>
+</body>

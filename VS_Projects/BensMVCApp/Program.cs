@@ -6,11 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DarkSky;
-using DarkSkyApi;
-using FullCalendar;
 
-namespace BenApp
+namespace BensMVCApp
 {
     public class Program
     {

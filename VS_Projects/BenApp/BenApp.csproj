@@ -15,6 +15,13 @@
   <ItemGroup>
     <PackageReference Include="Azure.Core" Version="1.24.0" />
     <PackageReference Include="bootstrap" Version="5.1.3" />
+    <PackageReference Include="DarkSkyApi" Version="3.3.0" />
+    <PackageReference Include="DarkSkyCore" Version="6.0.2" />
+    <PackageReference Include="DarkSkySharp" Version="0.1.4632.20971" />
+    <PackageReference Include="fullcalendar" Version="3.9.0" />
+    <PackageReference Include="FullCalendar.Helper" Version="1.0.2" />
+    <PackageReference Include="fullCalendar.TypeScript.DefinitelyTyped" Version="0.7.3" />
+    <PackageReference Include="jQuery.Fullcalendar" Version="3.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
