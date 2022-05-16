@@ -22,8 +22,10 @@ function deleteTableItem(){
         alert("Please enter a valid value and ensure the table has values. ");
         return false; 
     }
-    else {
+    else 
+    {
         toDoTable.deleteRow(Number(input.value));
+        return true;
     }
 
 }

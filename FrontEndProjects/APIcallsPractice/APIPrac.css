@@ -1,0 +1,27 @@
+body{
+    background-color: forestgreen;
+}
+
+.theDivs {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+
+table#ToDoTable {
+    width:40%; 
+    margin-left:30%; 
+    margin-right:30%;
+    border: 2px solid white;
+}
+
+
+#inputSection {
+    text-align: center;
+}
+
+#outputSection {
+    text-align: center;
+}
