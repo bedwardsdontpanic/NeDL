@@ -72,3 +72,22 @@ async function getGithubInfo()
 
 }
 
+
+  async function getBreweries()
+  {
+      let output = document.getElementById('breweries');
+      output.innerHTML = '';
+      let theCoordinates = getLocation();
+      let theURL = "https://api.openbrewerydb.org/breweries?by_dist=" + theCoordinates + "&per_page=3";
+      console.log(theURL);
+      let response = await fetch(theURL);
+      let data = await response.json()
+  //    output.innerHTML = data;
+      console.log(data)
+      output.innerHTML = "<h6><strong>list: </strong></h6>"
+      for(breweries in data)
+      {
+          output.innerHTML += ("<p><a href =" +data[breweries].website_url + "> " + data[breweries].name + "</a></p>")
+      }
+  
+  }
