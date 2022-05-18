@@ -20,5 +20,6 @@ function deleteTableItem() {
     }
     else {
         toDoTable.deleteRow(Number(input.value));
+        return true;
     }
 }

@@ -17,15 +17,23 @@
     <br>
 
     <div id = "inputSection">
-        <button class="btn btn-success" onclick="getBreweries()">Get brewery info</button>
+        <button class="btn btn-success" onclick="getBreweries()">Find breweries near me</button>
+        <br><br>
+        <button class="btn btn-info" onclick="suggestADrink()">Suggest me a drink</button>
         <br><br>
     </div>
 
     <br><br>
 
     <div id = "outputSection">
-        <p id = "location"></p>
-        <div id = "breweries"></div>
+        <div id = "cocktails"></div>
+        <br>
+
+        <table class="table table-responsive table-dark"  id="breweriesTable">
+            <thead class = "table-dark">
+            </thead>
+        </table>
+
     </div>
       
 

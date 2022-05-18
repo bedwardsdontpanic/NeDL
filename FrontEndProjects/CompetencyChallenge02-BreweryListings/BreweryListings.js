@@ -1,93 +1,81 @@
-async function getTheBacon() {
-    let input = document.getElementById('theNumber');
-    let output = document.getElementById('theBacon');
-    let nextValue = input.value;
-    if (nextValue == '' || nextValue == null || nextValue < 1 || nextValue > 5) 
-    {
-        alert('Please enter a number 1-5. ');
-        return false;
-    }
-
-    output.innerHTML = '';
-    let theURL = "https://baconipsum.com/api/?type=all-meat&paras=" + nextValue;
-    console.log(theURL);
-    let response = await
-    fetch(theURL);
-    let data = await response.json()
-//    output.innerHTML = data;
-
-     for(pg in data){
-        output.innerHTML += ("<p>" + data[pg] + "</p>")
-    }
-}
+let theCoordinates = "";
 
 
-async function getChuckNorrisFacts()
+
+
+async function getBreweries()
 {
-    let theURL = "https://api.chucknorris.io/jokes/random"
-    let response = await
-    fetch(theURL);
-    var output = document.getElementById('chuckNorris');
-    let data = await response.json()
-    output.innerHTML = data.value;
-}
-
-async function getPuppyPicture()
-{
-    let theURL = "https://dog.ceo/api/breeds/image/random"
-//    let theURL = "https://place-puppy.com/300x300"
-    let response = await
-    fetch(theURL);
-    var output = document.getElementById('puppyPicture');
-    let data = await response.blob()
-    const blobUrl = URL.createObjectURL(data) // blob is the Blob object
-    let image = new Image();
-    image.src = blobUrl
-    console.log(data);
-    document.body.appendChild(image);
-}
-
-async function getGithubInfo()
-{
-    let input = document.getElementById('usernameInput');
-    let output = document.getElementById('githubInfo');
-    let nextValue = input.value;
-    if (nextValue == '' || nextValue == null) 
-    {
-        alert('Please enter a username. ');
-        return false;
-    }
-    output.innerHTML = '';
-    let theURL = "https://api.github.com/users/" + nextValue + "/repos";
+    console.log(theCoordinates);
+    let theURL = "https://api.openbrewerydb.org/breweries?by_dist=" + theCoordinates + "&per_page=10";
     console.log(theURL);
     let response = await fetch(theURL);
     let data = await response.json()
-//    output.innerHTML = data;
     console.log(data)
-    output.innerHTML = "<h6><strong>" + nextValue + "'s repos: </strong></h6>"
-    for(repos in data)
+    var toDoTable = document.getElementById('breweriesTable');
+    toDoTable.innerHTML = "";
+    for(breweries in data)
     {
-        output.innerHTML += ("<p><a href =" +data[repos].html_url + "> " + data[repos].name + "</a></p>")
-    }
 
+        let nextValue = data[breweries].website_url + ", " + data[breweries].name + 
+        " address: " + data[breweries].street
+        var row = toDoTable.insertRow(-1);
+        row.insertCell().appendChild(document.createTextNode(data[breweries].name));
+        row.insertCell().appendChild(document.createTextNode(data[breweries].street));
+        var a = document.createElement('a');
+        var linkText = document.createTextNode("website link");
+        a.appendChild(linkText);
+        a.title = "my title text";
+        a.href = data[breweries].website_url;
+        row.insertCell().appendChild(a);        
+    }
 }
 
+async function suggestADrink(){
+    let output = document.getElementById('cocktails');
+    output.innerHTML = '';
+    let theURL = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+    console.log(theURL);
+    let response = await fetch(theURL);
+    let data = await response.json()
+    output.innerHTML = "<h4><strong>Suggested drink </strong></h4>"
+    for(cocktails in data.drinks)
+    {
+        output.innerHTML += "<p><strong>Name: </strong>" + data.drinks[cocktails].strDrink;
+        if(data.drinks[cocktails].strIngredient1 != null){
+            output.innerHTML += "<strong>Ingredients: </strong>" + data.drinks[cocktails].strIngredient1
+        }
+        if(data.drinks[cocktails].strIngredient2 != null){
+            output.innerHTML += ", " + data.drinks[cocktails].strIngredient2
+        }
+        if(data.drinks[cocktails].strIngredient3 != null){
+            output.innerHTML += ", " +  data.drinks[cocktails].strIngredient3
+        }
+        if(data.drinks[cocktails].strIngredient4 != null){
+            output.innerHTML +=  ", " + data.drinks[cocktails].strIngredient4
+        }
+        if(data.drinks[cocktails].strIngredient5 != null){
+            output.innerHTML += ", " +  data.drinks[cocktails].strIngredient5
+        }
+        
 
-  async function getBreweries()
-  {
-      let output = document.getElementById('breweries');
-      output.innerHTML = '';
-      let theCoordinates = getLocation();
-      let theURL = "https://api.openbrewerydb.org/breweries?by_dist=" + theCoordinates + "&per_page=3";
-      console.log(theURL);
-      let response = await fetch(theURL);
-      let data = await response.json()
-  //    output.innerHTML = data;
-      console.log(data)
-      output.innerHTML = "<h6><strong>list: </strong></h6>"
-      for(breweries in data)
-      {
-          output.innerHTML += ("<p><a href =" +data[breweries].website_url + "> " + data[breweries].name + "</a></p>")
-      }
-  
-  }
+        output.innerHTML += "<br><br><strong>Instructions: </strong>" + data.drinks[cocktails].strInstructions
+    }
+}
+
+function getLocation(callback) {
+    if (navigator.geolocation) {
+        var lat_lng = navigator.geolocation.getCurrentPosition(function(position){
+            var user_position = {};
+            theCoordinates = position.coords.latitude + "," + position.coords.longitude;
+            user_position.lat = position.coords.latitude; 
+            user_position.lng = position.coords.longitude; 
+            callback(theCoordinates);
+        });
+    } else {
+        alert("Geolocation is not supported by this browser.");
+        }
+}
+    getLocation(function(lat_lng){
+        console.log(lat_lng)
+        return lat_lng;
+    });
