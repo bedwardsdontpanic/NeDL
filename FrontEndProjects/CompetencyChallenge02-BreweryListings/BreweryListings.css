@@ -1,5 +1,7 @@
 body{
-    background-image: url("https://envato-shoebox-0.imgix.net/f309/08f0-c751-4da9-ba9f-62c7a94fd21f/_K4A7247.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=15745df6fd33f570f570abb0259ca7d0")
+    background-image: url("https://envato-shoebox-0.imgix.net/f309/08f0-c751-4da9-ba9f-62c7a94fd21f/_K4A7247.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=15745df6fd33f570f570abb0259ca7d0");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .theDivs {
@@ -29,4 +31,28 @@ table#breweriesTable {
     margin-right:30%;
     border: 2px solid white;
     background-color: orangered;
+}
+
+#cocktailImage{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.form-control{
+    background-color: darkgray;
+    width: 100%;
+    height: 55%;
+}
+
+.form-control:focus{
+    background-color: darkgray;
+}
+
+#button-addon2{
+    height: 60px;
+}
+
+html {
+    font-size: 100%; 
 }

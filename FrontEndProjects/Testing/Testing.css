@@ -1,0 +1,17 @@
+body{
+    background-color: skyblue;
+}
+
+.form-control{
+    background-color: darkgray;
+    width: 100%;
+    height: 55%;
+}
+
+.form-control:focus{
+    background-color: darkgray;
+}
+
+#button-addon2{
+    height: 60px;
+}
