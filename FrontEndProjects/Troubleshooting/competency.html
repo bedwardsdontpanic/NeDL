@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <h1>My To Do List</h1>
+
+    <link rel="stylesheet" href = "Competency.css">
+    <script src="Competency.js"></script>
+</head>
+<body>
+
+    <div class ="myflexboxRow">
+        <div class="myflexboxColumn">
+            <form name="ToDoForm">
+                To Do: <input type ="text" name="enterToDo" value=""><br /><br>
+                <button type="button"  onclick="addNewItem()">Add item to the list</button><br><br>
+                Remove To Do:<input type ="number" name="clearItemValue" value=""><br /><br>
+                <button type="button"  onclick="clearoneitem()">Clear item from the list</button><br>
+            </form>
+        </div>
+        <div class ="myflexboxColumn">
+        <h2>To Do List</h2>
+            <table id="ToDoList">
+            </table>
+            <input type="button" value="Clear To Do List" onclick="clearthelist()">
+        </div>
+    </div>
+</body>
+</html>

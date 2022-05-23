@@ -1,0 +1,36 @@
+.myflexboxRow
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.myflexboxColumn
+{
+    flex: 30%;
+    padding: 20px;
+}
+@media screen and(max-width: 800px) 
+{
+    .myflexboxRow{
+        flex-direction: column;
+    } 
+}
+h1
+{
+    color: purple;
+}
+h2
+{
+   color:purple;
+}
+
+body
+{
+    counter-reset: table-counter;
+}
+table tr::before {
+    display: table-cell;
+    counter-increment: table-counter;
+    content: counter(table-counter) ".";
+    padding-right: 10px;
+    text-align: right;
+}
