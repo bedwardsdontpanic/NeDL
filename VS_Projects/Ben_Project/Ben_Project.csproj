@@ -21,6 +21,7 @@
     <PackageReference Include="DarkSkyApi" Version="3.3.0" />
     <PackageReference Include="DarkSkyCore" Version="6.0.2" />
     <PackageReference Include="fullcalendar" Version="3.9.0" />
+    <PackageReference Include="jQuery" Version="3.6.0" />
     <PackageReference Include="jQuery.Fullcalendar" Version="3.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
@@ -28,7 +29,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.6.4">
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.7.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -43,6 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\Objects\Events.ts" />
     <None Remove="ClientApp\src\app\Services\file.ts" />
   </ItemGroup>
 

@@ -5,16 +5,16 @@
 }
 
 body {
-    text-align: center;
-    height: 100%;
-    position: fixed;
-    min-width: 100%;
-    background-image: url("https://papers.co/wallpaper/papers.co-vc81-triangles-green-blue-lights-pattern-36-3840x2400-4k-wallpaper.jpg");
-    background-repeat: no-repeat;
-    background-color: #cccccc;
-    background-size: 100%;
-    background-size: cover;
-    background-position: center;
+  text-align: center;
+  height: 100%;
+  position: fixed;
+  min-width: 100%;
+  background-image: url("https://www.hdwallpapers.in/download/abstract_purple_4k_hd_abstract_3-HD.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .transparentImgs {

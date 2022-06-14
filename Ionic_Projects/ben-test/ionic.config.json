@@ -1,0 +1,7 @@
+{
+  "name": "BenTest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

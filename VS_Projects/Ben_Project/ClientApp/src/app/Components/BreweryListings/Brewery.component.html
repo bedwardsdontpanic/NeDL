@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id = "inputSection">
+        <br>
+        <button class="btn btn-success" onclick="getBreweries()">Find breweries near me</button>
+        <br><br>
+        <button class="btn btn-info" onclick="suggestDrink()">Suggest me a drink</button>
+        <br><br>
+        <div class="d-flex justify-content-center">
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="drinkEntry" placeholder="Search for a drink">
+                <label for="floatingInput">Search for a drink:</label>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button" id="button-addon2" onclick="findDrink()">Search</button>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+    <div id = "outputSection">
+        <div id = "cocktails">
+        </div>
+        <br><br>
+        <table class="table table-responsive table-dark"  id="breweriesTable">
+            <thead class = "table-dark">
+            </thead>
+        </table>
+
+    </div>
+
+</body>

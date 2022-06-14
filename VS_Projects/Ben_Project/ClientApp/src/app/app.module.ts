@@ -15,6 +15,12 @@ import { WeatherAppComponent } from './Components/weather-app/weather-app.compon
 import { ToDoListComponent } from './Components/to-do-list/to-do-list.component';
 import { BrainGameComponent } from './Components/brain-game/brain-game.component';
 import { CalendarAppComponent } from './Components/calendar-app/calendar-app.component';
+import { NEDLComponent } from './Components/NEDL/NEDL.component';
+import { BreweryComponent } from './Components/BreweryListings/BreweryListings.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+
+
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -28,11 +34,15 @@ const routes: Routes = [
   { path: 'todo', component: ToDoListComponent },
   { path: 'brain', component: BrainGameComponent },
   { path: 'calendar', component: CalendarAppComponent },
+  { path: 'NEDL', component: NEDLComponent },
+  { path: 'Breweries', component: BreweryComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
+    FetchDataComponent,
+    NavMenuComponent,
     HomepageComponent,
     BrainGameComponent,
     OverviewComponent,
@@ -43,7 +53,10 @@ const routes: Routes = [
     TransitionComponent,
     WeatherAppComponent,
     ToDoListComponent,
-    CalendarAppComponent
+    CalendarAppComponent,
+    NEDLComponent,
+    BreweryComponent
+
   ],
   imports: [
     HttpClientModule,

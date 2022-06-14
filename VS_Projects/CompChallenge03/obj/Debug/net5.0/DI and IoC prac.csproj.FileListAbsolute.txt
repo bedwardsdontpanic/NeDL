@@ -1,0 +1,32 @@
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\bin\Debug\net5.0\DI and IoC prac.exe
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\bin\Debug\net5.0\DI and IoC prac.deps.json
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\bin\Debug\net5.0\DI and IoC prac.runtimeconfig.json
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\bin\Debug\net5.0\DI and IoC prac.runtimeconfig.dev.json
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\bin\Debug\net5.0\DI and IoC prac.dll
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\bin\Debug\net5.0\DI and IoC prac.pdb
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\DI and IoC prac.csproj.AssemblyReference.cache
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\DI and IoC prac.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\DI and IoC prac.AssemblyInfoInputs.cache
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\DI and IoC prac.AssemblyInfo.cs
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\DI and IoC prac.csproj.CoreCompileInputs.cache
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\DI and IoC prac.dll
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\refint\DI and IoC prac.dll
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\DI and IoC prac.pdb
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\DI and IoC prac.genruntimeconfig.cache
+D:\Workspaces\NeDL\VS_Projects\DI and IoC prac\obj\Debug\net5.0\ref\DI and IoC prac.dll
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\bin\Debug\net5.0\DI and IoC prac.exe
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\bin\Debug\net5.0\DI and IoC prac.deps.json
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\bin\Debug\net5.0\DI and IoC prac.runtimeconfig.json
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\bin\Debug\net5.0\DI and IoC prac.runtimeconfig.dev.json
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\bin\Debug\net5.0\DI and IoC prac.dll
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\bin\Debug\net5.0\DI and IoC prac.pdb
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\DI and IoC prac.csproj.AssemblyReference.cache
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\DI and IoC prac.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\DI and IoC prac.AssemblyInfoInputs.cache
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\DI and IoC prac.AssemblyInfo.cs
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\DI and IoC prac.csproj.CoreCompileInputs.cache
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\DI and IoC prac.dll
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\refint\DI and IoC prac.dll
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\DI and IoC prac.pdb
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\DI and IoC prac.genruntimeconfig.cache
+D:\Workspaces\NeDL\VS_Projects\CompChallenge03\obj\Debug\net5.0\ref\DI and IoC prac.dll
