@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "ben-sp-testing",
+    "libraryId": "fad3f6e2-0a03-424a-83bf-745f2597a8eb",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ben-sp-testing",
+    "solutionShortDescription": "ben-sp-testing description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

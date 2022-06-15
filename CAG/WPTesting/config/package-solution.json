@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ben-sp-testing-client-side-solution",
+    "id": "fad3f6e2-0a03-424a-83bf-745f2597a8eb",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ben-sp-testing description"
+      },
+      "longDescription": {
+        "default": "ben-sp-testing description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ben-sp-testing Feature",
+        "description": "The feature that activates elements of the ben-sp-testing solution.",
+        "id": "054177cb-24e3-4fb1-824a-5547646c9936",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ben-sp-testing.sppkg"
+  }
+}

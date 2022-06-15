@@ -1,0 +1,48 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.invisible {
+  display: none;
+}
+
+.conagraPolls {
+  .label {
+    border:1px solid #6c757d;
+    font-weight: bold;
+    padding: 7px 0;
+    width:80px;
+    height: 34px;
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    align-items: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+
+  }
+  .labelActive {
+    border:3px solid #2196F3;
+    font-weight: bold;
+    padding: 5px 0;
+    width:80px;
+    height: 34px;
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    align-items: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+
+  }
+  .input {
+    display: none;
+  }
+}
